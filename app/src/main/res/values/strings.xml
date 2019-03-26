@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">MyTracker2</string>
+    <string name="home">Golf Tracker</string>
+    <string name="bouton1">Nouveau Match</string>
+    <string name="bouton2">Statistiques 5 derniers matchs</string>
+    <string name="bouton3">Statistiques tous les matchs</string>
+    <string name="j1">Joueur 1</string>
+    <string name="j2">Joueur 2</string>
+    <string name="format">Format du match</string>
+    <string name="neuf">9</string>
+    <string name="dixhuit">18</string>
 </resources>
