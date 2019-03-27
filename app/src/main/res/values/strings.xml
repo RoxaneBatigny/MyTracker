@@ -9,4 +9,25 @@
     <string name="format">Format du match</string>
     <string name="neuf">9</string>
     <string name="dixhuit">18</string>
+    <string name="demarrer">Démarrer</string>
+    <string name="score">Score</string>
+    <string name="tiret">-</string>
+    <string name="zero">0</string>
+    <string name="echange">Echange</string>
+    <string name="un">1</string>
+    <string name="deux">2</string>
+    <string name="trois">3</string>
+    <string name="quatre">4</string>
+    <string name="cinq">5</string>
+    <string name="six">6</string>
+    <string name="sept">7</string>
+    <string name="huit">8</string>
+    <string name="dix">10</string>
+    <string name="onze">11</string>
+    <string name="douze">12</string>
+    <string name="treize">13</string>
+    <string name="quatorze">14</string>
+    <string name="quinze">15</string>
+    <string name="seize">16</string>
+    <string name="dixsept">17</string>
 </resources>

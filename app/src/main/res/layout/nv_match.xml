@@ -8,7 +8,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="512dp"
         android:orientation="vertical">
 
         <EditText
@@ -18,8 +18,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="30dp"
             android:layout_marginBottom="5dp"
-            android:text="@string/j1"
-            />
+            android:text="@string/j1" />
 
         <EditText
             android:id="@+id/joueur2"
@@ -28,12 +27,12 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="5dp"
-            android:text="@string/j2"
-            />
+            android:text="@string/j2" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="60dp"
+            android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/format_match"
@@ -43,7 +42,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
                 android:text="@string/format"
-                />
+                android:textSize="17dp" />
 
             <Button
                 android:layout_width="50dp"
@@ -51,8 +50,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
-                android:text="@string/neuf"
-                />
+                android:text="@string/neuf" />
 
             <Button
                 android:layout_width="50dp"
@@ -60,10 +58,20 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
-                android:text="@string/dixhuit"
-                />
+                android:text="@string/dixhuit" />
+
 
         </LinearLayout>
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="130dp"
+            android:gravity="center"
+            android:text="@string/demarrer"
+            android:textAlignment="center"/>
 
 
     </LinearLayout>
