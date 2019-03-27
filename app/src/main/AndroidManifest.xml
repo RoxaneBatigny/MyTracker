@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".En_Match"></activity>
+        <activity android:name="Nv_Match"></activity>
     </application>
 
 </manifest>
