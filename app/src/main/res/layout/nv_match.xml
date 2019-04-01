@@ -43,23 +43,28 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
                 android:text="@string/format"
-                android:textSize="17dp" />
+                android:textSize="17dp"
+                android:textColor="@color/black"/>
 
             <Button
+                android:id="@+id/neuf"
                 android:layout_width="50dp"
                 android:layout_height="45dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
-                android:text="@string/neuf" />
+                android:text="@string/neuf"
+                android:onClick="ClickHandler"/>
 
             <Button
+                android:id="@+id/dixhuit"
                 android:layout_width="50dp"
                 android:layout_height="45dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
-                android:text="@string/dixhuit" />
+                android:text="@string/dixhuit"
+                android:onClick="ClickHandler"/>
 
 
         </LinearLayout>

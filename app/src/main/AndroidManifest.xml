@@ -16,8 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".En_Match"></activity>
-        <activity android:name="Nv_Match"></activity>
+        <activity android:name=".Neuf_trous"
+            android:parentActivityName=".Nv_Match"/>
+        <activity android:name=".Nv_Match"
+            android:parentActivityName=".HomePage"/>
+        <activity android:name=".DixHuit_trous"
+            android:parentActivityName=".Nv_Match"/>
     </application>
 
 </manifest>
