@@ -14,6 +14,7 @@ import java.util.concurrent.ExecutionException;
 
 public class HomePage extends AppCompatActivity implements Main_Fragment.OnButtonClickedListener {
 
+    private static final String TAG = "MainActivity";
     DatabaseHelper databaseHelper;
 
     private Main_Fragment main_fragment = new Main_Fragment();
@@ -27,6 +28,13 @@ public class HomePage extends AppCompatActivity implements Main_Fragment.OnButto
         setSupportActionBar(toolbar);
 
         getSupportFragmentManager().beginTransaction().add(R.id.frm, main_fragment).commit();
+         databaseHelper = new DatabaseHelper(this);
+
+
+
+
+
+
 
         setTitle("GolfTracker");
     }
@@ -85,5 +93,24 @@ public class HomePage extends AppCompatActivity implements Main_Fragment.OnButto
             IntentStats();
         }
     }
+
+    public void AddData(String newEntry) {
+        boolean insertData = databaseHelper.addData(newEntry);
+
+        if (insertData) {
+            toastMessage("Data Successfully Inserted!");
+        } else {
+            toastMessage("Something went wrong");
+        }
+    }
+
+    /**
+     * customizable toast
+
+     */
+    private void toastMessage(String message){
+        Toast.makeText(this,message, Toast.LENGTH_SHORT).show();
+    }
+}
 
 }
