@@ -14,6 +14,8 @@ import java.util.concurrent.ExecutionException;
 
 public class HomePage extends AppCompatActivity implements Main_Fragment.OnButtonClickedListener {
 
+    DatabaseHelper databaseHelper;
+
     private Main_Fragment main_fragment = new Main_Fragment();
 
     @Override
