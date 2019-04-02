@@ -2,8 +2,10 @@ package com.edu.rb.mytracker2;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
@@ -19,9 +21,12 @@ public class HomePage extends AppCompatActivity implements Main_Fragment.OnButto
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_page);
 
+        Toolbar toolbar=findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
         getSupportFragmentManager().beginTransaction().add(R.id.frm, main_fragment).commit();
 
-        setTitle("g");
+        setTitle("GolfTracker");
     }
 
     @Override
@@ -29,6 +34,22 @@ public class HomePage extends AppCompatActivity implements Main_Fragment.OnButto
         getMenuInflater().inflate(R.menu.bottom_navigation_menu, menu);
 
         return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.home_logo:
+                Intent intentHome = new Intent (this, HomePage.class);
+                startActivity(intentHome);
+                return true;
+            case R.id.camera_logo:
+                Intent intentPhotos = new Intent (this, Photos.class);
+                startActivity(intentPhotos);
+                return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
     public void IntentNvMatch()
