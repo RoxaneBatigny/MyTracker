@@ -3,7 +3,7 @@ package com.edu.rb.mytracker2;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -77,6 +77,8 @@ public class Main_Fragment extends Fragment implements View.OnClickListener {
 
         //Set onClickListener to button "SHOW ME DETAILS"
         result.findViewById(R.id.nv_match).setOnClickListener(this);
+        result.findViewById(R.id.Stats5).setOnClickListener(this);
+        result.findViewById(R.id.Stats).setOnClickListener(this);
 
         return result;
     }
