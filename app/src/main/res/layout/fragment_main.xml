@@ -5,60 +5,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.edu.rb.mytracker2.Main_Fragment"
     android:gravity="center"
     android:background="#D8DCF0"
     >
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="217dp"
-            app:srcCompat="@drawable/logo"
-            tools:layout_editor_absoluteX="81dp"
-            tools:layout_editor_absoluteY="16dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="5dp"
-            />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/home"
-            android:textAlignment="center"
-            android:textColor="@color/colorPrimary"
-            android:textSize="40dp"
-
-            android:layout_marginBottom="5dp"
-            android:layout_marginTop="5dp"
-            />
-
-        <Button
-            android:id="@+id/nv_match"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_marginBottom="25dp"
-            android:layout_marginEnd="40dp"
-            android:layout_marginStart="40dp"
-            android:text="@string/bouton1"
-            android:onClick="onClick"
-            />
-
-        <Button
-            android:id="@+id/Stats5"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_marginBottom="25dp"
-            android:layout_marginEnd="40dp"
-            android:layout_marginStart="40dp"
-            android:text="@string/bouton2"
-            android:onClick="onClick"
-            />
 
         <Button
             android:id="@+id/Stats"
@@ -74,4 +28,3 @@
 
     </LinearLayout>
 
-</LinearLayout>

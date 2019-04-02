@@ -15,3 +15,5 @@
         android:title="@string/bottom_navigation_menu_landscape"
         app:showAsAction="ifRoom" />
 </menu>
+
+

@@ -10,10 +10,15 @@ import java.util.concurrent.ExecutionException;
 
 public class HomePage extends AppCompatActivity implements Main_Fragment.OnButtonClickedListener {
 
+    private Main_Fragment main_fragment = new Main_Fragment();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_page);
+
+        getSupportFragmentManager().beginTransaction().add(R.id.frm, main_fragment).commit();
+
         setTitle("GolfTracker");
     }
 
