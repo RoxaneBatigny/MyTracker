@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home_logo"
+        android:enabled="true"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/bottom_navigation_menu_logos"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/camera_logo"
+        android:enabled="true"
+        android:icon="@drawable/ic_camera_alt_black_24dp"
+        android:title="@string/bottom_navigation_menu_landscape"
+        app:showAsAction="ifRoom" />
+</menu>

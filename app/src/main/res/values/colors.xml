@@ -4,4 +4,9 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="black">#000000</color>
+
+    <!-- APP BASE -->
+    ...
+    <color name="colorAccentDark">#4aa87a</color>
+    <color name="background_light">#FFFFFF</color>
 </resources>
