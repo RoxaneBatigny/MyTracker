@@ -12,7 +12,7 @@
     >
 
     <android.support.v7.widget.Toolbar
-        android:id="@+id/activity_main_bottom_navigation"
+        android:id="@+id/main_bottom_navigation"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         android:background="?attr/colorPrimary"
         android:elevation="4dp"
@@ -71,8 +71,10 @@
             />
 
         <FrameLayout
-            android:layout_width="wrap_content"
-            android:layout_height="200dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="40dp"
             android:id="@+id/frm"></FrameLayout>
 
     </LinearLayout>

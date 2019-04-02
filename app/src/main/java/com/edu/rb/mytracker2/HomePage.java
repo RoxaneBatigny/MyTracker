@@ -20,7 +20,7 @@ public class HomePage extends AppCompatActivity implements Main_Fragment.OnButto
 
         getSupportFragmentManager().beginTransaction().add(R.id.frm, main_fragment).commit();
 
-        setTitle("GolfTracker");
+        setTitle("g");
     }
 
     public void IntentNvMatch()
