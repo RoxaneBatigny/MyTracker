@@ -8,7 +8,7 @@ import android.widget.Toast;
 
 import java.util.concurrent.ExecutionException;
 
-public class HomePage extends AppCompatActivity {
+public class HomePage extends AppCompatActivity implements Main_Fragment.OnButtonClickedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +35,8 @@ public class HomePage extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void ClickHandler(View view) throws ExecutionException, InterruptedException{
+    @Override
+    public void onButtonClicked(View view) {
         if(view.getId()==R.id.nv_match){
             Toast.makeText(getApplicationContext(), "test", Toast.LENGTH_SHORT).show();
             IntentNvMatch();
@@ -47,4 +48,5 @@ public class HomePage extends AppCompatActivity {
             IntentStats();
         }
     }
+
 }
